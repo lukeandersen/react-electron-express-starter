@@ -1,0 +1,43 @@
+/* Buttons */
+
+button {
+	border: 0;
+	background: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid var(--primary);
+	border-radius: 3px;
+	background: var(--primary);
+	color: white;
+	padding: .75rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		opacity: .75;
+	}
+
+	&.btn-sm {
+		padding: .5rem 1rem;
+		font-size: 0.875rem;
+	}
+
+	&.btn-lg {
+		padding: 1rem 2rem;
+		font-size: 1.125rem;
+	}
+
+	&[disabled] {
+		opacity: .4;
+	}
+}
+
+.btn-block {
+	width: 100%;
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,9 @@
+/* Typeography */
+
+h1 {
+	color: var(--primary);
+
+	& small {
+		color: gray(150);
+	}
+}

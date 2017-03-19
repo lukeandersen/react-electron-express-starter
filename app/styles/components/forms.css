@@ -1,0 +1,35 @@
+/* Forms */
+
+label {
+	display: block;
+	margin-bottom: .5rem;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+
+	&[disabled] {
+		opacity: .4;
+	}
+}
+
+input, select, textarea {
+	width: 100%;
+	background: white;
+	border: 1px solid color(black alpha(30%));
+	border-radius: 5px;
+	padding: .75rem 1rem;
+	margin-bottom: .5rem;
+	color: gray;
+
+	&:focus {
+		outline: 0;
+		border-color: dodgerblue;
+	}
+
+    &[disabled] {
+    	cursor: not-allowed;
+    	opacity: .5;
+    }
+}
