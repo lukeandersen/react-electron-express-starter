@@ -23,7 +23,7 @@
     "babel-loader": "6.4.1",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
-    "concurrently": "3.4.0",
+    "concurrently": "3.6.1",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.26.1",
     "electron": "9.1.0",
