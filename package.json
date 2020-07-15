@@ -44,7 +44,7 @@
     "express": "4.14.1",
     "morgan": "^1.9.1",
     "axios": "^0.19.0",
-    "classnames": "2.2.5",
+    "classnames": "2.2.6",
     "dotenv": "4.0.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
