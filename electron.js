@@ -5,21 +5,27 @@ const server = require('./app');
 
 const path = require('path');
 const url = require('url');
+const isDev = require("electron-is-dev")
 
 let mainWindow;
 
 function createWindow () {
     mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
-    mainWindow.loadURL('http://localhost:5000/');
-    // mainWindow.loadURL(url.format({
-    //     pathname: path.join(__dirname, 'index.html'),
-    //     protocol: 'file:',
-    //     slashes: true
-    // }));
+    if(isDev){
+        mainWindow.loadURL('http://localhost:5000/');
 
-    // Open the DevTools.
-    mainWindow.webContents.openDevTools();
+
+        // Open the DevTools.
+        mainWindow.webContents.openDevTools();
+    }else{
+        mainWindow.loadURL(url.format({
+            pathname: path.join(__dirname, 'index.html'),
+            protocol: 'file:',
+            slashes: true
+        }));
+    }
+
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
