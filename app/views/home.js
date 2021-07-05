@@ -30,7 +30,7 @@ class Home extends Component {
 
         return (
             <div className="container text-center">
-                <h2>Name: {name}</h2>
+                <h2>Name: {name} you</h2>
 
                 <form className="search" onSubmit={this.handleSearch}>
                     <input onChange={this.handleInput} type="search" placeholder="Search" />

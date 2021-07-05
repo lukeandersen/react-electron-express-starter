@@ -16,13 +16,13 @@ module.exports = {
         rules: [{
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
-            loader: 'babel-loader',
+            use: ['babel-loader'],
         }, {
-            test: /\.css$/,
-            loader: ['style-loader', 'css-loader', 'postcss-loader'],
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader', 'postcss-loader']
         }, {
             test: /\.(png|jpg|jpeg|gif|svg)$/,
-            loader: 'file-loader?limit=8192&name=assets/[name].[ext]?[hash]'
+            use: ['file-loader?limit=8192&name=assets/[name].[ext]?[hash]']
         }]
     },
     plugins: [
