@@ -53,7 +53,7 @@
     "dotenv": "8.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-router-dom": "5.2.0"
+    "react-router-dom": "5.3.4"
   },
   "babel": {
     "presets": [
