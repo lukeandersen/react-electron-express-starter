@@ -49,7 +49,7 @@
     "express": "4.17.1",
     "morgan": "^1.10.0",
     "axios": "^0.21.0",
-    "classnames": "2.2.6",
+    "classnames": "2.5.1",
     "dotenv": "8.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
